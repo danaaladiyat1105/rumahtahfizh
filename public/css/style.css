@@ -1,0 +1,87 @@
+.container {
+    display: flex;
+    height: 100vh;
+}
+.sidebar {
+    width: 250px;
+    background-color: #a00000;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.sidebar img {
+    width: 100%;
+    height: auto;
+}
+.sidebar h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.sidebar button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: white;
+    color: #a00000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sidebar button:hover {
+    background-color: #f0f0f0;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+.sidebar ul li.active {
+    background-color: white;
+    color: #a00000;
+    border-radius: 5px;
+}
+.sidebar ul li.active .circle {
+    background-color: #a00000;
+}
+.sidebar ul li .circle {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.main-content {
+    flex-grow: 1;
+    background-color: #e0e0e0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.main-content .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #808080;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+}
+.main-content .header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+.main-content .header .add-button {
+    background-color: #808080;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.main-content .header .add-button i {
+    margin-right: 5px;
+}
